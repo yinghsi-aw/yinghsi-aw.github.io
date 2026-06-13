@@ -1,8 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-    	<title>Personal Website Test</title>
+        <meta charset="UTF-8">
+
+        <title>Abigail's world</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <style>
+
+            body {
+                background-color:#f5f5f5 ;
+            }
+
+            article > h1 {
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+                margin: 10vh 0 5vh 0;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+               
+
+                align-items: center;
+
+            }
+
+            nav > p > a {
+                display: flex;
+                color: white;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                text-decoration: none;
+                padding: 1px;
+            }
+
+            nav > p {
+                display: flex;
+                background-color: dimgray;
+                border-radius: 50px;
+                height: 10vh;
+                width: 40vw;
+            }
+
+            nav:last-of-type > p{   
+                width: 15vw;
+                height: 5vh;
+                background-color: silver;
+            }
+
+            nav:last-of-type > p > a{   
+                font-size: 20px;
+            }
+
+            figure {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                height: 30vh;
+                border-radius: 100%;
+            }
+
+            a:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+        </style>
     </head>
     <body>
-    	This is my personal website!
-    </body>
-</html>
+    <article>
+        <h1>Welcome to Abigail's Website!</h1>
+        <figure>
+            <img src="en.img/IMG_0187.jpg">
+        </figure>
+           <nav>
+            <p><a href="en.auto.html">About me</a></p>
+            <p><a href="en.hobby.html">My Hobby</a></p>
+            </nav>
+            <nav>
+            <p><a href="home.zh.html">中文</a></p>
+            </nav>
+    </article>

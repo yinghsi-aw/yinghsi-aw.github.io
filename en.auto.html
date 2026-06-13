@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Abigail's world</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(window).ready(function(){
+                $("nav > p:first-of-type").on("click", function(){
+            /* $(this).siblings().slideToggle(); */
+                    $(this).siblings().each(function(index){
+                        $(this).slideToggle((index + 1) *400);
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            body {
+                background-color:#f5f5f5 ;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                height: 100%;
+                width: 75vw;
+                margin: 0 14vw;
+
+            }
+
+            h1 {
+                background-color: gray;
+                color: white;
+                width: 15vw;
+                height: 7vh;
+                position: fixed;
+                top: 3vh;
+                text-align: center;
+                border-radius: 25px;
+                padding: 5px;
+                opacity: 0.8;
+            }
+
+            section:first-of-type {
+                padding: 15vh 5vw 0 5vw;
+                margin: 1vh 0 0 0;
+            }
+
+     /      section:not(:first-of-type) {
+                padding: 0 5vw 0 5vw;
+                margin: 0 0 1vh 0;
+            }
+        
+
+            section:nth-of-type(2) {
+                padding: 0 5vw 0 5vw;
+                margin: 0;
+            }
+
+            section:nth-of-type(3) {
+                padding: 0 5vw 0 5vw;
+                margin: 1vh 0 1vh 0;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                background-color: #696969;
+                color: white;
+                width: 8vw;
+                text-align: center;
+                align-items: center;
+            }
+
+            nav:last-of-type {
+                position: fixed;
+                top: 0;
+                left: 9vw;
+                background-color: silver;
+                width: 7vw;
+                text-align: center;
+            }
+
+            nav:last-of-type > p > a {
+                color: #696969;
+            }
+
+            nav > p:hover {
+                opacity: 0.7;
+            }
+
+
+            nav > p:first-of-type {
+                cursor: pointer;
+
+            }
+            
+
+            nav > p:not(:first-of-type) {
+                display: none; 
+            }
+
+            nav > p > a {
+                color: white;
+                text-decoration: none;
+            }
+
+            section > p {
+                background-color: silver;
+                padding: 1vw;
+                border-radius: 25px;
+                font-size: 18px;
+                
+            }
+
+            section > figure {
+                display: flex;
+                justify-content: center;  
+                margin: 1vh 0 3vh 0 ;
+                height: 70vh;
+                
+
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+         <nav>
+            <p>☰</p>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="en.auto.html">About me</a></p>
+            <p><a href="en.hobby.html">My Hobby</a></p>
+         </nav>
+         <nav>
+            <p><a href="zh.auto.html">中文</a></p>
+         </nav>
+    <article>
+        <h1>✨About Me✨</h1>
+        <section>
+            <figure>
+                <img src="en.img/IMG_9312.JPG"/>
+            </figure>
+            <p>
+                Hello, my name is Wu, Ying-Hsi, though I usually go by <em>Abigail</em> . I’m a senior from the Foreign Languages and Literature department at NTHU! Interestingly, many people would just call me Abi, as it can be a bit tricky for Taiwanese people to pronounce. The name has Hebrew origins, meaning <em>'the fountain of joy'</em>. I chose this name for myself back in junior high school because I felt it suited me perfectly! 
+            </p>
+        </section>
+        <section>
+            <p>
+                If I have to use three words to describe myself, they would undoubtedly be <em>vibrant</em>, <em>adventurous</em>, and <em>curious</em>. These are the traits that my friends frequently mention when talking about me. I truly believe the environment I grew up in played a huge role in shaping who I am today.
+            </p>
+        </section>
+        <section>
+            <p>
+                I come from <em>Taipei</em>, and I’m a huge fan of this city. Here, people can embrace who they are and be themselves with open arms. This welcoming social vibe provides diversity to this place and always gives me the chance to meet many different, unexpected, and intriguing people and things. Ultimately, I feel it’s exactly Taipei, a city bursting with endless possibilities, that has shaped my dynamic, bold, and curious nature.
+            </p>
+        </section>
+          
+
+    </article>
