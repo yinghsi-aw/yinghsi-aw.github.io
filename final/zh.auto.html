@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Abigail's world</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(window).ready(function(){
+                $("nav > p:first-of-type").on("click", function(){
+            /* $(this).siblings().slideToggle(); */
+                    $(this).siblings().each(function(index){
+                        $(this).slideToggle((index + 1) *400);
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            body {
+                background-color:#f5f5f5 ;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                height: 100%;
+                width: 75vw;
+                margin: 0 14vw;
+                
+            }
+
+
+
+            h1 {
+                background-color: gray;
+                color: white;
+                width: 15vw;
+                height: 7vh;
+                position: fixed;
+                top: 3vh;
+                text-align: center;
+                border-radius: 25px;
+                padding: 5px 0;
+                opacity: 0.8;
+            }
+
+
+
+            section:first-of-type {
+                padding: 15vh 5vw 0 5vw;
+                margin: 1vh 0 0 0;
+            }
+
+             section:last-of-type {
+                padding: 0 5vw 0 5vw;
+                margin: 0 0 1vh 0;
+            }
+            
+            nav {
+                position: fixed;
+                top: 0;
+                background-color: #696969;
+                color: white;
+                width: 8vw;
+                text-align: center;
+                align-items: center;
+            }
+
+            nav:last-of-type {
+                position: fixed;
+                top: 0;
+                left: 9vw;
+                background-color: silver;
+                width: 7vw;
+                text-align: center;               
+            }
+
+            nav:last-of-type > p > a {
+                color: #696969;
+            }
+
+            nav > p:hover {
+                opacity: 0.7;
+            }
+
+
+            nav > p:first-of-type {
+                cursor: pointer;
+
+            }
+            
+
+            nav > p:not(:first-of-type) {
+                display: none; 
+            }
+
+            nav > p > a {
+                color: white;
+                text-decoration: none;
+            }
+
+            section > p {
+                background-color: silver;
+                padding: 1vw;
+                margin: 1vh;
+                border-radius: 25px;
+                font-size: 18px;
+                width: 55vw;
+            }
+
+            section:last-of-type {
+                margin:  0 0 5vh 0;
+            }
+
+            section > figure {
+                display: flex;
+                justify-content: center;  
+                margin: 1vh 0 3vh 0 ;
+                height: 70vh;     
+
+            }
+
+       
+
+        </style>
+    </head>
+
+    <body>
+         <nav>
+            <p>☰</p>
+            <p><a href="home.zh.html">首頁</a></p>
+            <p><a href="zh.auto.html">關於我</a></p>
+            <p><a href="zh.hobby.html">嗜好</a></p>
+         </nav>
+         <nav>
+            <p><a href="en.auto.html">English</a></p>
+         </nav>
+    <article>
+        <h1>✨關於我✨</h1>
+        <section>
+            <figure>
+                <img id="Taipei-101" src="en.img/IMG_9312.JPG"/>
+            </figure>
+            <p>
+                哈囉，我是武映熙，可以叫我Abigail，我是清大外語系的大四生！有趣的是很多人會叫我Abi因為這個名字對很多台灣人來說有點難發音。這個名字是來自希伯來語，意思是喜樂的泉源，而我是在國中的時候幫自己取的因為覺得它非常適合我！
+                如果要用三個字來形容我的話，那無疑是：活潑、冒險、好奇，這些都是在朋友們口中經常聽到的我。我深深地相信，我所生長的環境，正是形塑如今的我的重要推手。
+            </p>
+        </section>
+        <section>
+            <p>
+                我來自台北而且我也熱愛台北，因為在這座城市每個人都可以大方地擁抱自己的樣子並且勇敢地做自己。這種開放包容的社會氛圍為這個地方提供了多元性，讓我總是可以遇到很多不同、出乎意料、有趣的人事物。而我覺得正是因為台北這個充滿無限可能的地方造就了我的生命力、好奇與冒險特質。
+            </p>
+        </section>
+    </article>

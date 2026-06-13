@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Abigail's world</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(window).ready(function(){
+                $("nav > p:first-of-type").on("click", function(){
+                    $(this).siblings().each(function(index){
+                        $(this).slideToggle((index + 1) *400);
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            body {
+                background-color:#fff0f5 ;
+                margin: 0;
+            }
+
+            body > figure:first-of-type {
+                position: fixed;
+                top: 30vh;
+                right: 3vw;
+                margin: 0;
+            }
+
+             body > figure:nth-of-type(2) {
+                position: fixed;
+                top: 30vh;
+                left: 8vw;
+                margin: 0;
+            }
+
+            img {
+
+                height: 45vh;
+
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                height: 100%;
+                width: 75vw;
+                margin: 20vh 14vw 0 14vw;
+
+
+            }
+
+            h1 {
+                background-color: #db7093;
+                color: white;
+                width: 20vw;
+                height: 7vh;
+                position: fixed;
+                top: 3vh;
+                text-align: center;
+                border-radius: 25px;
+                padding: 5px;
+                opacity: 0.7;
+            }
+
+            section {
+                display: flex;
+                flex-direction:column;
+                width: 90%;
+                align-items: center;
+                background-color: pink;
+                height: 100%;
+
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                background-color: #696969;
+                color: white;
+                width: 8vw;
+                text-align: center;
+                align-items: center;
+            }
+
+            nav:last-of-type {
+                position: fixed;
+                top: 0;
+                left: 9vw;
+                background-color: silver;
+                width: 7vw;
+                text-align: center;
+            }
+
+            nav:last-of-type > p > a {
+                color: #696969;
+            }
+
+            nav > p:hover {
+                opacity: 0.7;
+            }
+
+
+            nav > p:first-of-type {
+                cursor: pointer;
+
+            }
+            
+
+            nav > p:not(:first-of-type) {
+                display: none; 
+            }
+
+            nav > p > a {
+                color: white;
+                text-decoration: none;
+            }
+
+            section > p {
+                background-color: white;
+                padding: 1vw;
+                font-size: 18px;
+                width: 50vw;
+                margin: 5vh 0 0 0;
+                
+            }
+
+            section:last-of-type >p {
+                margin: 5vh 0 5vh 0;
+            }
+
+
+            
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+         <nav>
+            <p>☰</p>
+            <p><a href="home.zh.html">首頁</a></p>
+            <p><a href="zh.auto.html">關於我</a></p>
+            <p><a href="zh.hobby.html">嗜好</a></p>
+         </nav>
+         <nav>
+            <p><a href="en.hobby.html">English</a></p>
+         </nav>
+         <figure>
+                <img src="en.img/IMG_5655 2.jpg">
+        </figure>
+        <figure>
+                <img src="en.img/IMG_1833.JPG">
+        </figure>
+       
+    <article>
+        <h1>🧸我的嗜好🧸</h1>
+        <section>
+            <p>
+                我最喜歡的嗜好毫無懸念就是化妝。我喜歡這麼做不是因為想要掩蓋自己，而是因為它會讓我更有自信，並幫助我更愛自己。雖然很多人只把化妝品當成上學或上班時，為了讓自己看起來得體而應付的例行公事，但在我眼裡，化妝是一種表達自己的形式。對我來說，化妝是為了每天的生活帶來儀式感，它關乎我內心的感受，而不是我外在的長相。這是我與自己連結最喜歡的方式。
+            </p>
+           
+        </section>
+        <section>
+            <p>
+               這個嗜好教會我，自信是可以透過練習來建立的。當我剛開始嘗試接觸化妝時，過程其實並不容易。我還記得當時光是為了把眼線畫對稱，就足足掙扎了十分鐘，最後常常搞得眼睛周圍全是糊掉的黑色眼線液。然而，隨著我練習暈染眼影並開始了解自己的臉型後，我意識到化妝根本不是為了迎合別人的標準而改變自己的五官，而是為了凸顯最喜歡的自己。現在，每當我成功畫出犀利的眼線，或是找到完美的口紅色號，我都會有巨大的成就感。當我端詳著鏡子，我看到的不是一副虛假的面具，而是一個更大膽、更有活力的自己。這個過程徹底改變了我的心情，並給予我力量去面對一整天的任何挑戰。
+            </p>
+
+        </section>
+        <section>
+            <p>
+               因為我對化妝的熱愛與「自我」深深相連，所以我不需要觀眾也能享受其中。事實上，我最喜歡的幾次妝容，往往發生在完全沒有出門計畫的日子裡。例如，在一個下雨的星期天下午，你經常會發現我穿著睡衣坐在書桌前，放著我最喜歡的音樂，花上一個小時嘗試一種大膽、色彩豐富的眼妝。對其他人來說，只是為了坐在沙發上或看 Netflix 就浪費粉底和時間，看起來像是個很不值得做的事情。然而，看著鏡子裡滿意的成果，會讓我發自內心地感到快樂。我這樣做不是為了得到其他人的稱讚，也不是為了在社群媒體上博眼球。我這麼做，是因為當看見自己是我喜歡的樣子，會讓我更加愛自己，即使台下的觀眾始終只有我自己。
+            </p>
+        </section>
+        <section>
+            <p>
+                最終，化妝已經成為我對「生活儀式感」的個人定義。在這個每個人都行色匆匆、忙著滿足他人期待的世界裡，這一個小時的獨處讓我能夠慢下來，將注意力完全集中在自己身上。這是一個充滿可能的過程，讓我能表達自己的心情，並達到真正的自我照顧。化妝讓我明白，花時間讓自己感覺美麗，永遠不會是時間或化妝品的浪費。它是一個美麗的提醒：我這輩子唯一需要取悅的人，就是鏡子裡正看著我的那個人。
+            </p>
+        </section>
+    </article>

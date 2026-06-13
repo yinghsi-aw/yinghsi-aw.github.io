@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Abigail's world</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(window).ready(function(){
+                $("nav > p:first-of-type").on("click", function(){
+                    $(this).siblings().each(function(index){
+                        $(this).slideToggle((index + 1) *400);
+                    });
+                });
+            });
+        </script>
+
+        <style>
+            body {
+                background-color:#fff0f5 ;
+                margin: 0;
+            }
+
+            body > figure:first-of-type {
+                position: fixed;
+                top: 30vh;
+                right: 3vw;
+                margin: 0;
+            }
+
+             body > figure:nth-of-type(2) {
+                position: fixed;
+                top: 30vh;
+                left: 8vw;
+                margin: 0;
+            }
+
+            img {
+
+                height: 45vh;
+
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                height: 100%;
+                width: 75vw;
+                margin: 20vh 14vw 0 14vw;
+
+
+            }
+
+            h1 {
+                background-color: #db7093;
+                color: white;
+                width: 20vw;
+                height: 7vh;
+                position: fixed;
+                top: 3vh;
+                text-align: center;
+                border-radius: 25px;
+                padding: 5px;
+                opacity: 0.7;
+            }
+
+            section {
+                display: flex;
+                flex-direction:column;
+                width: 90%;
+                align-items: center;
+                background-color: pink;
+                height: 100%;
+
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                background-color: #696969;
+                color: white;
+                width: 8vw;
+                text-align: center;
+                align-items: center;
+            }
+
+            nav:last-of-type {
+                position: fixed;
+                top: 0;
+                left: 9vw;
+                background-color: silver;
+                width: 7vw;
+                text-align: center;
+            }
+
+            nav:last-of-type > p > a {
+                color: #696969;
+            }
+
+            nav > p:hover {
+                opacity: 0.7;
+            }
+
+
+            nav > p:first-of-type {
+                cursor: pointer;
+
+            }
+            
+
+            nav > p:not(:first-of-type) {
+                display: none; 
+            }
+
+            nav > p > a {
+                color: white;
+                text-decoration: none;
+            }
+
+            section > p {
+                background-color: white;
+                padding: 1vw;
+                font-size: 18px;
+                width: 50vw;
+                margin: 5vh 0 0 0;
+                
+            }
+
+            section:last-of-type >p {
+                margin: 5vh 0 5vh 0;
+            }
+
+
+            
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+         <nav>
+            <p>☰</p>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="zh.hobby.html">About me</a></p>
+            <p><a href="zh.hobby.html">My Hobby</a></p>
+         </nav>
+         <nav>
+            <p><a href="zh.hobby.html">中文</a></p>
+         </nav>
+         <figure>
+                <img src="en.img/IMG_5655 2.jpg">
+        </figure>
+        <figure>
+                <img src="en.img/IMG_1833.JPG">
+        </figure>
+       
+    <article>
+        <h1>🧸My Hobby🧸</h1>
+        <section>
+            <p>
+                My absolute favorite hobby is makeup, not because I want to hide my face, but because it makes me feel confident and helps me love who I am. While many people see cosmetics as just a boring routine to look presentable for school or work, I see them as a form of personal expression. For me, applying makeup is a powerful daily ritual. It’s about how I feel on the inside, rather than how I look on the outside. It is my favorite way to connect with myself.
+            </p>
+           
+        </section>
+        <section>
+            <p>
+               This hobby has taught me that confidence is something you can build with practice. When I first started experimenting with beauty products, it was not easy. I remember struggling for ten minutes just to get my eyeliner even, often ending up with smudged black ink around my eyes. However, as I practiced blending eyeshadows and understanding my face shape, I realized that makeup was not about changing my features to fit someone else’s standards. Instead, it was about highlighting my favorite parts of myself. Now, every time I successfully draw a sharp wing or find the perfect lipstick shade, I feel a huge wave of accomplishment. When I look in the mirror, I don't see a fake mask; I see a bolder, more energized version of myself. This process completely changes my mood and gives me the strength to face any challenges during the day.
+            </p>
+
+        </section>
+        <section>
+            <p>
+               Because my love for makeup is deeply connected to self-love, I do not need an audience to enjoy it. In fact, some of my favorite looks happen on days when I have absolutely no plans to leave the house. For example, on a rainy Sunday afternoon, you can often find me sitting at my desk in my pajamas, playing my favorite music, and spending an hour trying out a bold, colorful eye look. To an outsider, wasting expensive foundation and time just to sit on the couch or watch Netflix might seem completely silly. However, looking in the mirror and seeing the creative result makes me genuinely happy. I am not doing it for compliments from classmates, and I am not doing it for likes on social media. I do it because looking good makes me feel good, even if I am the only person in the audience.
+            </p>
+        </section>
+        <section>
+            <p>
+                Makeup has become my personal definition of a life ritual. In a busy world where we always rush to meet everyone else’s expectations, this one-hour routine allows me to slow down and focus entirely on myself. It is a creative space where I can express my mood and practice true self-care. Makeup has shown me that taking time to make myself feel beautiful is never a waste of time or products. It is a beautiful reminder that the most important person I ever need to impress is the one looking back at me in the mirror.
+            </p>
+        </section>
+    </article>
