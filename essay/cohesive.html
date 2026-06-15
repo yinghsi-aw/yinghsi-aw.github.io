@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Climate+Crisis:YEAR@1979&family=Fascinate+Inline&display=swap" rel="stylesheet">
+        <title>Expository Essay Analysis</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+           $(window).ready(function(){
+         
+                $("#thesis").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#coherence").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#cohesive").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#takeaway").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#key").on("click", function(){
+                    $(this).siblings("#menu").slideToggle(500)
+                });
+          
+                $("#ans").on("click", function(){
+                    $("#pop2").slideToggle(500)
+                });
+                $("#ans").on("click", function(){
+                    $("#pic").slideToggle(500)
+                });
+            });        
+        </script>
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                background-color: darksalmon;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            body > nav > P:first-of-type {
+                font-size: 20px;
+                text-align: center;
+               
+
+            }
+
+            body > nav > p:hover {
+                cursor: pointer;
+            }
+            
+
+            h1 {
+                
+                font-family: "Bungee", serif;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+
+            article {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+            
+            }
+
+            figure {
+                display: none;
+                margin: 0 5vw 10vh 0;
+
+            }
+
+            img {
+                height: 50vh;
+            }
+   
+            body > nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #696969;
+                color: white;
+                width: 12vw;
+                padding: 5px;
+             
+            }
+
+            nav > p > a {
+                display: flex;
+                color: white;
+                width: 100%;
+                font-size: 20px;
+                text-decoration: none;
+                justify-content: left;
+                padding-left: 5px;
+            }
+
+       
+
+            section > h2 {
+                text-align: center;
+                display: flex;
+                background-color: saddlebrown;
+                color: white;
+                width: 20%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 40% ;
+            }
+
+
+            section > p {
+                background-color: cornsilk;
+                font-size: 18px;
+                padding: 2vw;
+               
+            }
+
+            section:nth-of-type(2) > p:hover {
+                cursor: pointer;
+            }
+
+
+            a:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+
+            body > nav > p:last-of-type {
+                margin-bottom: 30px; 
+            }   
+
+
+
+            h2:nth-of-type(3):hover,
+            h2:nth-of-type(4):hover,
+            h2:nth-of-type(5):hover,
+            h2:nth-of-type(6):hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            section > nav {
+                display: flex; 
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            section > nav > p {
+                width: 10vw;
+                height: 5vh;
+                background-color: silver;
+                border-radius: 5px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+            }
+
+            section > nav > p > a {
+                font-size: 20px;
+                color: black;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            body > nav > p:nth-of-type(2) {
+               font-size: 20px;
+               text-align: left;
+               padding-left: 5px;
+
+            }
+
+            body > nav > p:nth-of-type(2):hover {
+                opacity: 0.7;
+            }
+
+            body > nav > p:nth-of-type(3), 
+            body > nav > p:nth-of-type(4), 
+            body > nav > p:nth-of-type(5), 
+            body > nav > p:nth-of-type(6) {
+                display: none;
+            
+            }
+
+            body > nav > p:nth-of-type(3) > a, 
+            body > nav > p:nth-of-type(4) > a, 
+            body > nav > p:nth-of-type(5) > a, 
+            body > nav > p:nth-of-type(6) > a {
+                font-size: 17px;
+                padding-left: 40px;
+                text-decoration: underline;
+               
+            }
+
+            span:first-of-type:hover {
+                opacity: 0.8;
+                color: navy;
+            }
+
+            #pop2 {
+                display: none;
+                background-color: gold;
+                width: 30vw;  
+                padding: 30px;
+                margin-top: 40px;
+                margin-bottom: 10vh;
+                margin-left: 60px;
+            }
+
+            li {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: left;
+               
+            }
+
+            section:nth-of-type(3) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                margin-left: 2vw;
+            }
+
+        </style>
+  </head>
+    <body>
+        <nav>
+            <p><a href="index.html">Home</a></p>
+            <p id="key">The Four Key Elements</p>
+            <p id="menu"><a href="thesis.html">Thesis Statement</a></p>
+            <p id="menu"><a href="coherence.html">Coherence</a></p>
+            <p id="menu"><a href="cohesive.html">Cohesion</a></p>
+            <p id="menu"><a href="takeaway.html">Takeaway</a></p>
+            <p><a href="sample.html">Sample Analysis</a></p>
+        </nav>
+        <article>
+        <h1>What is Cohesion?</h1>   
+            <section>
+            <h2 id="intro">Intro </h2>
+                <p>
+                An expository essay also needs strong cohesion to connect your ideas smoothly. If coherence is about the big picture and logical flow, cohesion is the "glue" that holds your sentences together word by word. Think of your essay as a building; your ideas are the bricks, and cohesive devices are the mortar. Without them, your writing will sound choppy, robotic, and very difficult for the reader to follow.
+                To create good cohesion, transition words are your best tools. They act like traffic signs on the road, guiding the reader from one sentence to the next. For example, you can use words like "However" to show a contrast, or "Furthermore" to add more information. A great example is: "Smartphones are excellent tools for research; however, they can easily distract students during tasks." This small word "however" bridges two different points perfectly, keeping the reading flow natural.
+                </p>         
+            </section>
+            <section>
+            <h2>Give it a try</h2>
+            <h3>📝 Please spot the cohesive word in the following paragraph and click on it 📝</h3>
+                <p>
+                    Regular exercise is widely known for improving physical health, such as strengthening muscles and boosting the immune system. <span id="ans">Furthermore</span>, consistent physical activity triggers the release of endorphins, which significantly reduces everyday stress and anxiety. As a result, maintaining an active lifestyle benefits both the body and the mind, leading to a much higher quality of life.
+                </p>
+            </section>
+            <section>
+                <figure id="pic">
+                    <img src="img/see.png">
+                </figure>
+
+                <ul id="pop2">
+                    <li>It uses a transition word: The word <b>"Furthermore"</b> acts as a logical bridge, signaling to the reader that another important, supporting argument is being added</li>
+                    <li>It creates <b>a smooth bridge</b>: Instead of starting a choppy new sentence ("Exercise also helps the mind."), it smoothly glues the physical benefits (immune system) and the mental benefits (stress reduction) together.
+                
+            </section>
+        </article>
+    </body>

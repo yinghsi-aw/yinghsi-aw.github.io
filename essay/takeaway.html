@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Climate+Crisis:YEAR@1979&family=Fascinate+Inline&display=swap" rel="stylesheet">
+        <title>Expository Essay Analysis</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+           $(window).ready(function(){
+         
+                $("#thesis").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#coherence").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#cohesive").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#takeaway").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#key").on("click", function(){
+                    $(this).siblings("#menu").slideToggle(500)
+                });
+          
+                $("#ans").on("click", function(){
+                    $("#pop2").slideToggle(500)
+                });
+                $("#ans").on("click", function(){
+                    $("#pic").slideToggle(500)
+                });
+            });        
+        </script>
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                background-color: khaki;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            body > nav > P:first-of-type {
+                font-size: 20px;
+                text-align: center;
+               
+
+            }
+
+            body > nav > p:hover {
+                cursor: pointer;
+            }
+            
+
+            h1 {
+                
+                font-family: "Bungee", serif;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+
+            article {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+            
+            }
+
+            figure {
+                display: none;
+                margin: 0 5vw 10vh 0;
+
+            }
+
+            img {
+                height: 50vh;
+            }
+   
+            body > nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #696969;
+                color: white;
+                width: 12vw;
+                padding: 5px;
+             
+            }
+
+            nav > p > a {
+                display: flex;
+                color: white;
+                width: 100%;
+                font-size: 20px;
+                text-decoration: none;
+                justify-content: left;
+                padding-left: 5px;
+            }
+
+       
+
+            section > h2 {
+                text-align: center;
+                display: flex;
+                background-color: silver;
+                width: 20%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 40% ;
+            }
+
+
+            section > p {
+                background-color: lightyellow;
+                font-size: 18px;
+                padding: 2vw;
+               
+            }
+
+            section:nth-of-type(2) > p:hover {
+                cursor: pointer;
+            }
+
+
+            a:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+
+            body > nav > p:last-of-type {
+                margin-bottom: 30px; 
+            }   
+
+
+
+            h2:nth-of-type(3):hover,
+            h2:nth-of-type(4):hover,
+            h2:nth-of-type(5):hover,
+            h2:nth-of-type(6):hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            section > nav {
+                display: flex; 
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            section > nav > p {
+                width: 10vw;
+                height: 5vh;
+                background-color: silver;
+                border-radius: 5px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+            }
+
+            section > nav > p > a {
+                font-size: 20px;
+                color: black;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            body > nav > p:nth-of-type(2) {
+               font-size: 20px;
+               text-align: left;
+               padding-left: 5px;
+
+            }
+
+            body > nav > p:nth-of-type(2):hover {
+                opacity: 0.7;
+            }
+
+            body > nav > p:nth-of-type(3), 
+            body > nav > p:nth-of-type(4), 
+            body > nav > p:nth-of-type(5), 
+            body > nav > p:nth-of-type(6) {
+                display: none;
+            
+            }
+
+            body > nav > p:nth-of-type(3) > a, 
+            body > nav > p:nth-of-type(4) > a, 
+            body > nav > p:nth-of-type(5) > a, 
+            body > nav > p:nth-of-type(6) > a {
+                font-size: 17px;
+                padding-left: 40px;
+                text-decoration: underline;
+               
+            }
+
+            span:first-of-type:hover {
+                opacity: 0.8;
+                color: midnightblue;
+            }
+
+            #pop2 {
+                display: none;
+                background-color: gold;
+                width: 30vw;  
+                padding: 30px;
+                margin-top: 40px;
+                margin-bottom: 10vh;
+                margin-left: 60px;
+            }
+
+            li {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: left;
+               
+            }
+
+            section:nth-of-type(3) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                margin-left: 2vw;
+            }
+
+        </style>
+  </head>
+    <body>
+        <nav>
+            <p><a href="index.html">Home</a></p>
+            <p id="key">The Four Key Elements</p>
+            <p id="menu"><a href="thesis.html">Thesis Statement</a></p>
+            <p id="menu"><a href="coherence.html">Coherence</a></p>
+            <p id="menu"><a href="cohesive.html">Cohesion</a></p>
+            <p id="menu"><a href="takeaway.html">Takeaway</a></p>
+            <p><a href="sample.html">Sample Analysis</a></p>
+        </nav>
+        <article>
+        <h1>What is A Takeaway?</h1>   
+            <section>
+            <h2 id="intro">Intro </h2>
+                <p>
+                 A successful expository essay always ends with a meaningful takeaway. Instead of simply repeating your main arguments word for word, a great takeaway provides a fresh conclusion that connects your topic to the real world. Think of it as a parting gift; it ensures your audience walks away with a memorable final thought.
+                To create an effective takeaway, you should look toward the future or offer a powerful piece of advice. It should serve as the ultimate lesson or warning you want people to remember long after they have closed your page. By linking your specific ideas to a bigger picture, you give your entire essay a much stronger purpose.
+                </p>         
+            </section>
+            <section>
+            <h2>Give it a try</h2>
+            <h3>📝 Please spot the takeaway in the following paragraph and click on it 📝</h3>
+                <p>
+                    In conclusion, reducing our daily screen time is not just about avoiding eye strain or getting better sleep. While setting phone limits helps us regain control over our schedules, the real value lies in reclaiming our offline lives. Ultimately, <span id="ans">by disconnecting from our digital screens, we choose to reconnect with the physical world, fostering deeper human connections and living more intentionally.</span>
+                </p>
+            </section>
+            <section>
+                <figure id="pic">
+                    <img src="img/see.png">
+                </figure>
+
+                <ul id="pop2">
+                    <li>It creates <b>a lasting impression</b>: It goes beyond basic advice like "put down your phone" and reminds the reader how this habit directly changes their lifestyle."</li>
+                    <li>It elevates the <b>broader context</b>: It connects a small daily habit (screen time) to a bigger, meaningful theme (human connection), giving the reader an inspiring goal to achieve.</li>
+                </ul>
+                
+            </section>
+        </article>
+    </body>

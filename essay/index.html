@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Climate+Crisis:YEAR@1979&family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vidaloka&display=swap" rel="stylesheet">
+        <title>Expository Essay Analysis</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+           $(window).ready(function(){
+
+        /*        $("#green").on("click", function(){
+                    //alert("clicked!");
+                    $("#colorBlock").css({"background-color": "green", "opacity": 0.5});
+                });
+
+                $("#yellow").on("click", function(){
+                    $("#colorBlock").css({"background-color": "yellow", "opacity": 0.5});
+                });
+        */
+         
+                $("#intro").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#thesis").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#coherence").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#cohesive").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                $("#takeaway").on("click", function(){
+                    $(this).siblings().slideToggle(500)
+                });
+                 $("#key").on("click", function(){
+                    $(this).siblings("#menu").slideToggle(500)
+                });
+            });
+        </script>
+        <style>
+            html {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                background-color: #add8e6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            body > nav > P:first-of-type {
+                font-size: 20px;
+                text-align: center;
+               
+
+            }
+
+            body > nav > p:hover {
+                cursor: pointer;
+            }
+            
+
+            h1 {
+                
+                font-family: "Climate Crisis", serif;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            figure {
+                display: flex;
+                justify-content: center;
+            }
+
+            figure > img {
+                height: 50vh;
+            }
+
+            section:first-of-type > p{
+                display: none;
+            }
+
+            article {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+            
+            }
+
+            article > h2 {
+                background-color: silver;
+                width: 30vw;
+                text-align: center;
+
+            }
+
+   
+            body > nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #696969;
+                color: white;
+                width: 12vw;
+                padding: 5px;
+             
+            }
+
+            nav > p > a {
+                display: flex;
+                color: white;
+                width: 100%;
+                font-size: 20px;
+                text-decoration: none;
+                justify-content: left;
+                padding-left: 5px;
+            }
+
+            section:not(:first-of-type) {
+                background-color: white;
+                margin-bottom: 2vh;
+
+            }
+
+            section:first-of-type > h2 {
+                text-align: center;
+                background-color: silver;
+                width: 30vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            section:first-of-type > p {
+                background-color: white;
+                font-size: 18px;
+                padding: 2vw;
+            }
+
+            section:not(:first-of-type) > h2 {
+                
+                font-family: ;
+                
+            }
+
+            section:not(:first-of-type) > p {
+                font-size: 18px;
+            }
+
+            section:not(:first-of-type) > nav {
+                font-size: 18px;
+            }
+
+            section:not(:first-of-type) > h2,
+            section:not(:first-of-type) > p,
+            section:not(:first-of-type) > nav {
+                padding: 0 2vw;
+            }
+
+
+
+            a:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+
+            section:not(:first-of-type) > h2:hover {
+                opacity: 0.7;
+            }
+
+            body > nav > p:last-of-type {
+                margin-bottom: 30px; 
+            }   
+
+            section:not(:first-of-type) > p, 
+            section:not(:first-of-type) > nav {
+                display: none;
+            }
+
+            h2:nth-of-type(3):hover,
+            h2:nth-of-type(4):hover,
+            h2:nth-of-type(5):hover,
+            h2:nth-of-type(6):hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            section > nav {
+                display: flex; 
+                margin-top: 15px;
+                justify-content: center;
+            }
+
+            section > nav > p {
+                width: 10vw;
+                height: 5vh;
+                background-color: silver;
+                border-radius: 5px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+            }
+
+            section > nav > p > a {
+                font-size: 20px;
+                color: black;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            body > nav > p:nth-of-type(2) {
+               font-size: 20px;
+               text-align: left;
+               padding-left: 5px;
+
+            }
+
+            body > nav > p:nth-of-type(2):hover {
+                opacity: 0.7;
+            }
+
+            body > nav > p:nth-of-type(3), 
+            body > nav > p:nth-of-type(4), 
+            body > nav > p:nth-of-type(5), 
+            body > nav > p:nth-of-type(6) {
+                display: none;
+            
+            }
+
+            body > nav > p:nth-of-type(3) > a, 
+            body > nav > p:nth-of-type(4) > a, 
+            body > nav > p:nth-of-type(5) > a, 
+            body > nav > p:nth-of-type(6) > a {
+                font-size: 17px;
+                padding-left: 40px;
+                text-decoration: underline;
+               
+            }
+
+            #thesis:hover,
+            #coherence:hover,
+            #cohesive:hover,
+            #takeaway:hover,
+            #intro:hover {
+                cursor: pointer;
+                opacity: 0.7;
+
+            
+            }
+
+            #thesis,
+            #coherence,
+            #cohesive,
+            #takeaway {
+                font-family: "Vidaloka";
+            }
+
+         
+            #hk{
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <p><a href="index.html">Home</a></p>
+            <p id="key">The Four Key Elements</p>
+            <p id="menu"><a href="thesis.html">Thesis Statement</a></p>
+            <p id="menu"><a href="coherence.html">Coherence</a></p>
+            <p id="menu"><a href="cohesive.html">Cohesion</a></p>
+            <p id="menu"><a href="takeaway.html">Takeaway</a></p>
+            <p><a href="sample.html">Sample Analysis</a></p>
+        </nav>
+        <article>
+        <h1>English Expository Essay Reading and Writing</h1>   
+            <figure>
+                <img src="img/wri.png">
+            </figure>
+            <section>
+            <h2 id="intro">What is Expository Essay? [click] </h2>
+                <p>
+                    An expository essay is a genre of academic writing that focuses on explaining, illustrating, or clarifying a specific topic to the reader. It is designed to take a complex subject and break it down into a clear, logical, and easy-to-understand format using facts, statistics, and real-world examples.
+               
+                    To achieve this clarity, a successful expository essay relies heavily on structure rather than creative flair. It requires the writer to investigate an idea, evaluate the evidence, and present a balanced exposition of the topic. Whether you are explaining how a technological tool works, analyzing a historical event, or discussing the health benefits of a simple habit, your job as the writer is to act as an informative guide—transforming confusion into complete understanding for your audience.
+                </p>         
+            </section>
+            <h2 id="hk">The Four Key Elements</h2>
+            <section>
+                <h2 id="thesis">Thesis Statement</h2>
+                <p>
+                    The thesis statement acts as the absolute North Star and foundational anchor of your essay. It is a single sentence that states your central argument, and every subsequent paragraph exists solely to support it.
+                </p>
+                <nav>
+                    <p><a href="thesis.html">Read More</a></p>
+                </nav>
+            </section>
+            <section>
+                <h2 id="coherence">Coherence</h2>
+                <p>
+                    Coherence represents the big-picture blueprint and structural logic of your entire piece. It ensures that your paragraphs are arranged in a meaningful order so that your ideas flow seamlessly from one major point to the next.
+                </p>
+                <nav>
+                    <p><a href="coherence.html">Read More</a></p>
+                </nav>
+            </section>
+            <section>
+                <h2 id="cohesive">Cohesion</h2>
+                <p>
+                    Cohesive devices function as the micro-level glue that binds individual sentences together. By using strategic transition words and pronouns, they prevent your writing from sounding choppy and make the reading experience feel effortless.
+                </p>
+                <nav>
+                    <p><a href="cohesive.html">Read More</a></p>
+                </nav>
+            </section>
+            <section>
+                <h2 id="takeaway">Takeaway</h2>
+                <p>
+                    The takeaway is the ultimate parting gift you give to your audience in the conclusion. Instead of simply repeating your thesis, it answers the critical question of "So what?" and leaves the reader with a profound idea worth remembering.
+                </p>
+                <nav>
+                    <p><a href="takeaway.html">Read More</a></p>
+                </nav>
+            </section>
+        </article>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
